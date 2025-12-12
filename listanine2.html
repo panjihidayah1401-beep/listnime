@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>List Anime</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #111;
+        font-family: Arial, sans-serif;
+        color: white;
+    }
+
+    header {
+        background: #ff7b00; 
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .anime-item {
+        background: #1c1c1c;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 12px;
+        border-left: 4px solid #ff7b00;
+        box-shadow: 0 0 5px rgba(255, 123, 0, 0.3);
+    }
+
+    .anime-title {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .button-box {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .btn {
+        padding: 10px 14px;
+        border: none;
+        cursor: pointer;
+        border-radius: 8px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .btn-check {
+        background: #ff7b00;
+        color: black;
+    }
+
+    .btn-x {
+        background: #444;
+        color: white;
+    }
+
+    small {
+        font-size: 12px;
+        opacity: 0.8;
+    }
+
+    .status {
+        margin-top: 8px;
+        font-size: 14px;
+        color: #ffb266;
+    }
+</style>
+</head>
+<body>
+
+<header>List Anime</header>
+
+<div class="container">
+
+    <!-- ANIME 1 -->
+    <div class="anime-item">
+        <div class="anime-title">Demon Slayer</div>
+
+        <div class="button-box">
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>
+        </div>
+
+        <div class="status">Status: -</div>
+    </div>
+
+    <!-- ANIME 2 -->
+    <div class="anime-item">
+        <div class="anime-title">Jujutsu Kaisen</div>
+
+        <div class="button-box">
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>
+        </div>
+
+        <div class="status">Status: -</div>
+    </div>
+ 
+    <!-- ANIME 3 -->
+    <div class="anime-item">
+        <div class=anime-title">Overlord</div>
+
+        <div class="button-box">
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>
+        </div>
+
+        <div class="status">Status: -</div>
+    </div>
+
+    <!-- ANIME 4 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Attack on Titan</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 5 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Naruto Shippuden</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 6 -->    
+    <div class="anime-item">    
+        <div class="anime-title">One Piece</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 7 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Solo Leveling</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 8 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Black Clover</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 9 -->    
+    <div class="anime-item">    
+        <div class="anime-title">My Hero Academia</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 10 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Tokyo Revengers</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 11 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Chainsaw Man</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 12 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Sword Art Online</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 13 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Re:Zero</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 14 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Overlord</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 15 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Blue Lock</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 16 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Vinland Saga</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 17 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Hunter x Hunter</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 18 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Fairy Tail</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 19 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Mob Psycho 100</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 20 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Dr. Stone</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 21 -->    
+    <div class="anime-item">    
+        <div class="anime-title">The Rising of the Shield Hero</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 22 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Classroom of the Elite</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 23 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Oshi no Ko</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 24 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Code Geass</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 25 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Steins;Gate</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 26 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Hellsing Ultimate</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 27 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Goblin Slayer</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 28 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Mushoku Tensei</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 29 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Plunderer</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+    <!-- ANIME 30 -->    
+    <div class="anime-item">    
+        <div class="anime-title">Fire Force</div>    
+    
+        <div class="button-box">    
+            <button class="btn btn-check" onclick="setStatus(this, true)">✔ Sudah Ditonton</button>    
+            <button class="btn btn-x" onclick="setStatus(this, false)">✘ Belum Ditonton</button>    
+        </div>    
+    
+        <div class="status">Status: -</div>    
+    </div>
+
+</div>
+
+<script>
+function setStatus(button, watched) {
+    const container = button.closest(".anime-item");
+    const statusText = container.querySelector(".status");
+
+    if (watched) {
+        statusText.innerHTML = "Status: Sudah Ditonton";
+        statusText.style.color = "#ff7b00";
+    } else {
+        statusText.innerHTML = "Status: Belum Ditonton";
+        statusText.style.color = "#cccccc";
+    }
+}
+</script>
+
+</body>
+</html>
